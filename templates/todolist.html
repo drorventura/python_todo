@@ -42,11 +42,11 @@
                     <td style="text-align: center;"><button type="submit">Add New</button></td>
                 </form>
             </tr>
-            {% for id in tododict %}
+            {% for item in tododict %}
                 <tr>
-                <td>{{ tododict[id] }}</td>
-                <td><a href="/delete/{{ id }}"><button>Delete</button></a></td>
-            </tr>
+                    <td>{{ item['description'] }}</td>
+                    <td><a href="/delete/{{ item['_id'] }}"><button>Delete</button></a></td>
+                </tr>
             {% endfor %}
         </table>
     </body>
