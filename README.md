@@ -1,5 +1,10 @@
 # Python Interview Task: TODO App
 
+## Guide to run
+docker-compose up --build
+service will run on http://localhost:8080
+mongo will run on mongodb://mongo:27017
+
 ## Task Overview
 
 In this task, you'll work on enhancing a simple TODO application by integrating it with a MongoDB database and containerizing it using Docker. Follow the steps below to complete the task.
